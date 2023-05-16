@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <h1 id="t">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In aliquid neque nobis est modi nisi expedita ducimus provident aliquam ad deleniti saepe sequi, voluptas sint et nihil, minus possimus iste.</h1>
+    <button id="b1">Fadeout</button>
+    <button id="b2">Fadein</button>
+    <button id="b3">Fadetoggle</button>
+    <button id="b4">Fadeto</button>
+    <script>
+        $("#b1").mouseover(function() {
+            $("#t").fadeOut(1000);
+        })
+        $("#b2").mouseover(() => {
+            $("#t").fadeIn(1000);
+        })
+        $("#b3").mouseover(() => {
+            $("#t").fadeToggle(1000);
+        })
+        $("#b4").mouseover(function() {
+            $("#t").fadeTo("slow", 0.2);
+        })
+    </script>
+</body>
+
+</html>

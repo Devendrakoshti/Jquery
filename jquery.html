@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="main">Hello i Am Dev</div>
+    <h1 id="t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptas, placeat dicta blanditiis aliquam veritatis asperiores dolorem aspernatur repellat corporis repellendus tempora harum provident impedit dolore libero rerum cum accusamus.</h1>
+    <button id="b1">Hide</button>
+    <button id="b2">Show</button>
+    <button class="b3">Hide and Show</button>
+    <script>
+        $("#main").css("color", "red");
+        // $("#b1").click(function() {
+        //     $("#t").hide();
+
+        // })
+        // $("#b2").click(function() {
+        //     $("#t").show()
+
+        // })
+        // $(".b3").click(function() {
+        //     $("#t").toggle(1500);
+        //     $("#t").css("color", "red");
+
+        // })
+        $("#b1").click(function() {
+            $("#t").(1000);
+        })
+
+        $("#b2").mouseover(() => {
+            $("#t").show(1000)
+        })
+        $(".b3").mouseover(() => {
+            $("#t").toggle(2000);
+        })
+    </script>
+
+</body>
+
+</html>

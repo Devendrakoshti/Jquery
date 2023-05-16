@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .x {
+            background-color: aqua;
+            font-size: 40px;
+            color: chartreuse;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p class="t">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga qui alias quo quos doloremque quibusdam excepturi reprehenderit cupiditate dolorem autem consequatur nisi quam quisquam porro, reiciendis saepe vero ea. Fugit?</p>
+    <button class="b1">Add css</button>
+    <button class="b2">Remove css</button>
+    <button class="b3">Add/Revome css</button>
+    <script>
+        // $(".t").css("color", "red")  
+
+        $(".b1").click(function() {
+            $(".t").addClass("x")
+        })
+        $(".b2").mouseover(() => {
+            $(".t").removeClass("x")
+        })
+        $(".b3").mouseover(() => {
+            $(".t").toggleClass("x")
+        })
+    </script>
+
+</body>
+
+</html>
