@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+</head>
+
+
+<body>
+    <div class="main">
+
+        <div class="gp">
+            Grandparent
+            <ul>
+                ul
+                <li>
+                    li
+                    <span>
+                           Span
+                      </span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <script>
+        // vishakha = $.noConflict();
+        // $("span").parents().css("border", "3px solid red")
+        $("span").parentsUntil(".main").css("border", "2px solid green")
+        $(".main").children().css("background", "lightpink")
+        $("li").children().css("background", "coral")
+        $(".gp").find("ul").css("height", "300px")
+        jQuery(".main").find("li").css("background", "lightblue")
+        jQuery(".gp").find("li").css("height", "100px")
+    </script>
+</body>
+
+</html>
